@@ -232,7 +232,8 @@ input, select, textarea {
 		h1.blog{
 			line-height: 1.2;
 			margin: -0.35em 0 0.4em -0.04em;
-			font-weight: bold;
+			font-weight: 400;
+			text-align: left;
 		}
 
 	h2 {
@@ -2421,13 +2422,25 @@ input, select, textarea {
 
 		.image.main {
 			display: block;
-			margin: 0 0 3em 0;
+			margin: 0 0 2em 0;
 			width: 100%;
 		}
 
 			.image.main img {
 				width: 100%;
 			}
+
+		.image.main.title {
+			margin-top: -42%;
+		}
+
+	@media screen and (max-width: 780px) {
+
+			.image.main.title {
+				margin-top: 0%;
+			}
+
+	}
 
 /* List */
 
@@ -2644,6 +2657,23 @@ input, select, textarea {
 			ul.icons li:last-child {
 				padding-right: 0 !important;
 			}
+
+
+		ul.icons.share li {
+			display: block;
+			padding: 1em 0.65em 0 0;
+			margin-left: -14%;
+		}
+
+	@media screen and (max-width: 780px) {
+
+			ul.icons.share li {
+				display: inline-block;
+				padding: 0em 0.65em 0 0;
+				margin-left: 0%;
+			}
+
+	}
 
 /* Section/Article */
 
