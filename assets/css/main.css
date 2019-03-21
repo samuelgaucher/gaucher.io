@@ -206,6 +206,9 @@ input, select, textarea {
 			column-gap: 2em;
 			text-align: justify; /*The text content of the paragraphs is justified*/
 		}
+		p.blog.top{
+			margin-top: -42%;
+		}
 
 	h1, h2, h3, h4, h5, h6 {
 		font-weight: 300;
@@ -230,10 +233,12 @@ input, select, textarea {
 		margin: 0 0 0.7em 0;
 	}
 		h1.blog{
+			font-size: 2.4em;
 			line-height: 1.2;
 			margin: -0.35em 0 0.4em -0.04em;
 			font-weight: 400;
 			text-align: left;
+			hyphens: none;
 		}
 
 	h2 {
@@ -259,6 +264,16 @@ input, select, textarea {
 	@media screen and (max-width: 736px) {
 
 		h1 {
+			font-size: 2em;
+		}
+		h1.blog {
+			font-size: 2.4em;
+		}
+
+	}
+
+	@media screen and (max-width: 480px) {
+		h1.blog {
 			font-size: 2em;
 		}
 
@@ -2437,6 +2452,9 @@ input, select, textarea {
 	@media screen and (max-width: 780px) {
 
 			.image.main.title {
+				margin-top: 0%;
+			}
+			p.blog.top{
 				margin-top: 0%;
 			}
 
