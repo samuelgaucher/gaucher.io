@@ -29,15 +29,15 @@ function getCookie(cname) {
     }
     if (c.indexOf(name) == 0) { 
     	if (c.substring(name.length, c.length) == "false"){
-    		alert("You cliked Ok! Cookies enabled.");
+    		//alert("You cliked Ok! Cookies enabled.");
     		return false; // if user clicked "Ok!", cookie was set to false, so here enable GA
     	}
     	else{
-    		alert("You cliked x! Cookies disabled.");
+    		//alert("You cliked x! Cookies disabled.");
     		return true; // if cookie exists and user clicked "x", and set to true and disable GA
     	}
     }
   }
-  alert("Cookie doesn't exist yet.");
+  //alert("Cookie doesn't exist yet.");
   return true; // if cookie doesn't exist, return true (disable GA)
 }
