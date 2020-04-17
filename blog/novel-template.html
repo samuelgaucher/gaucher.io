@@ -13,12 +13,6 @@
 			gtag('config', 'UA-135626636-1');
 		</script>
 		<script src="../assets/js/googan.js"></script>
-		<script>
-			window.dataLayer = window.dataLayer || [];
-			function gtag(){dataLayer.push(arguments);}
-			gtag('js', new Date());
-			gtag('config', 'UA-135626636-1');
-		</script>
 
 		<title>A pleasing LaTeX novel template: meet Pleanote</title>
 		<meta charset="utf-8" />
@@ -96,9 +90,9 @@
 								<br>
 								<section>
 									<ul class="icons" align="left">
-										<li><a href="docs/novel/pleanote.zip" class="icon fa-file"> pleanote.zip <span class="label" onclick="ga('send','event','Downloads','Click','Pleanote.zip');">ZIP</span></a></li>
+										<li><a href="docs/novel/pleanote.zip" class="icon fa-file"> pleanote.zip <span class="label" onclick="gtag('event','Click',{'event_category':'Downloads','event_label':'Pleanote.zip','value':1});">ZIP</span></a></li>
 										<br>
-										<li><a href="https://github.com/samuelgaucher/Pleanote" onclick="ga('send','event','Links','Click','GitHub');" class="icon fa-github"> GitHub<span class="label">ZIP</span></a></li>
+										<li><a href="https://github.com/samuelgaucher/Pleanote" onclick="gtag('event','Click',{'event_category':'Link','event_label':'GitHub','value':1});" class="icon fa-github"> GitHub<span class="label">ZIP</span></a></li>
 									</ul>
 								</section>	
 								<p> Use Pleanote as you want by downloading the source code and replacing the text by your own. It is one out of many already existing great novel templates available online (<a href="http://www.typesetters.se/latex-novel-template/">Typesetters</a>, <a href="https://www.sharelatex.com/templates/books">ShareLaTeX.com</a>, <a href="https://github.com/DGrady/book-template">Daniel Grady</a>). If you don't know how to use LaTeX, <a href="https://www.latex-tutorial.com/tutorials/">this guide</a> can help you getting started.</p>
